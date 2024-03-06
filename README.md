@@ -1,4 +1,6 @@
-# XMTP Quickstart
+# XMTP Quickstart Node
+
+![xmtp](https://github.com/xmtp/xmtp-quickstart-reactjs/assets/1447073/3f2979ec-4d13-4c3d-bf20-deab3b2ffaa1)
 
 ## Installation
 
@@ -9,7 +11,7 @@ node demo.js
 
 ## Script
 
-```
+```jsx
 const ethers = require("ethers");
 const { Client } = require("@xmtp/xmtp-js");
 
@@ -17,9 +19,7 @@ async function main() {
   const xmtp = await Client.create(ethers.Wallet.createRandom(), {
     env: "dev",
   });
-  const conv = await xmtp.conversations.newConversation(
-    "address",
-  );
+  const conv = await xmtp.conversations.newConversation("address");
   const message = await conv.send("gm");
   console.log(message);
 }
