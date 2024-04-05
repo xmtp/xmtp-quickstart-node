@@ -14,9 +14,7 @@ let conversation = null;
 //Initialize the wallet
 async function initialize_the_wallet_from_key() {
   // You'll want to replace this with a wallet from your application
-  wallet = new Wallet(
-    "4d06d3f0bdae95c453412ce6fbb3df5fd300ae87e11250625b1997c9a9ac82eb",
-  );
+  wallet = new Wallet("");
   console.log(`Wallet address: ${wallet.address}`);
 }
 
