@@ -12,8 +12,11 @@
 /.next/
 /out/
 
+conversations.csv
 # production
 /build
+wallets.csv
+conversations.csv
 
 # misc
 .DS_Store
